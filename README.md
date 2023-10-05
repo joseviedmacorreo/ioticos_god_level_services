@@ -1,3 +1,5 @@
+modifico read
+
 # IOTICOS GL (Plataforma IoT Nivel DIOS)
 
 Este repositorio contiene los servicios a montar (via docker) para montar la plataforma IoTicos GL.
