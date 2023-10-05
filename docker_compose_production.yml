@@ -12,7 +12,7 @@ services:
   node:
     container_name: node
     image: "node:14"
-    restart: always
+    
     working_dir: /home/node/app
     volumes:
       - ./app/:/home/node/app
@@ -31,7 +31,7 @@ services:
   mongo:
     container_name: mongo
     image: mongo:4.4
-    restart: always
+    
     logging:
       driver: "none"
     environment:
@@ -63,7 +63,7 @@ services:
       - mongo
 
     extra_hosts:
-      - "localhost:192.168.0.6"
+      - "localhost:3.12.201.168"
 
     environment:
       EMQX_NAME: ioticos-gl
